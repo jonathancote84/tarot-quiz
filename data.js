@@ -1,6 +1,6 @@
 // water is a data in the form of an array which you can iterrate through, future additions to the code are using a markov chain based text generator to create more questions for all of the tarot cards 
 // In that case the data for the 10 questions might be place holders for questions which are generated
-const water = [
+const store = [
     {
         id: 0,
         question: "The Fool card symbolizes what?", 

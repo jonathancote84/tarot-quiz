@@ -2,29 +2,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* display: flex;
-    flex-direction: column; */
+
 }
-/* body background */
+html { 
+  background: url('art/luca-baggio-211858-unsplash.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #ffffff;
+}
+
 body {
     font-family: 'Abel', sans-serif;
-    background-color: #ffffff;
-    background: url('art/luca-baggio-211858-unsplash.jpg') no-repeat;
-    background-size: cover;
     color: #363946;
 }
+fieldset {
+  display: block;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-block-start: 0em;
+  padding-inline-start: 0em;
+  padding-inline-end: 0em;
+  padding-block-end: 0em;
+ 
+  border-width: 0px;
+  border-style: none;
+
+}
+
+
 /*header styling*/
 
 header {
     width: 100%;
-    padding: 30px 0;
+    padding: 5px 0;
     color: #ffffff;
-    font-size: 20px;
+    
 }
 .logo {
     
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     display: block;
     margin: auto;
     filter: invert(100%);
@@ -40,8 +59,8 @@ h1 {
 
 }
 header ul li {
-    padding: 10px;
-    font-size: 18px
+    padding: .5em;
+    font-size: .75em;
 }
 .col-4,
 .col-8 {
@@ -101,22 +120,24 @@ header ul li {
     display: block;
     text-align: center;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
     
 }
 h1 {
 
     text-align: center;
-    /* display: none; */
 
 }
 h2 {
     text-align: center;
     margin-bottom: 20px;
     color: #ffffff;
-    font-size: 2em;
+    font-size: 1.5em;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: normal;    
+    padding-left: 5%;
+    padding-right: 5%;
+
 }
 
 .feedback {
@@ -144,38 +165,27 @@ h2 {
   .radio-group {
     background: rgba(0,0,0,0.2533);
     margin: auto;
+    padding-left: 15%;
+    padding-right:5%;
     display: flex;
+    flex-direction: column;
+
     align-content: center;
-    align-items: center;
-    text-align: center
+    align-items: flex-start;
+    text-align: left;
   }
-  @media (max-width: 48em) {
-    .radio-group {
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-      justify-content: center;
+
+   .radio-label {
+      display: block;
+      margin: 10px 0;
     }
-  }
-  
   .radio-group-label {
     display: block;
     width: 100%;
     margin: 10px 0;
   }
-  
-  .radio-label {
-    position: relative;
-    display: inline-block;
-    margin: 20px;
-    margin-left: auto;
-  }
-  @media (max-width: 48em) {
-    .radio-label {
-      display: block;
-      margin: 10px 0;
-    }
-  }
+
+
   .radio-label input {
     opacity: 0;
     position: absolute;
@@ -201,7 +211,7 @@ h2 {
     content: '\2713';
     color: #fff;
     position: absolute;
-    font-size: 20px;
+    font-size: 1em;
     left: 12px;
     top: 1px;
   }
@@ -212,7 +222,7 @@ h2 {
 /* white to black minimal bordered button */
     button {
         justify-content: center;
-        width: 15%;
+        width: 140px;
         color:#454545;
         background:transparent;
         border-width:2px;
@@ -269,7 +279,7 @@ h2 {
         color:#fff;
         border-color:#fff;
         text-shadow:0 1px 1px rgba(0,0,0,0.1);
-    box-shadow:0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1) inset
+        box-shadow:0 1px 3px rgba(0,0,0,0.1), 0 1px 3px rgba(0,0,0,0.1) inset
     }
         button:before,  button:after  {
             border-color:#fff
@@ -284,7 +294,33 @@ h2 {
             background-color:#353535;
             border-color:#353535
         }
+@media screen and (min-width:430px){
+  .logo{
+    height: 120px;
+    width: 120px;
+  }
+  header {
+    padding: 20px 0;
+  }
+  header ul li { 
 
+    font-size: 1 em;
+  }
+}
+@media screen and (min-width: 780px) {
+  .logo {
+    height:150px;
+    width:150px;
+  }
+  h2 {
+    
+    font-size: 2em;
+  }
+  .radio-group{
+    padding-left: 30%;
+    padding-right: 10%;
+  }
+}
 
 
 
